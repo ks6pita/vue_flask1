@@ -1,0 +1,15 @@
+FROM python:3.10
+
+WORKDIR /usr/src/app
+
+COPY ./ /usr/src/app
+
+RUN pip install --upgrade pip && \
+    pip install flask && \
+    pip install flask-cors && \
+    pip install plotly && \
+    pip install pandas && \
+    pip install numpy && \
+    pip install pyinstaller && \
+    pip install pywebview
+
